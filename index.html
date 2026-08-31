@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>PPP 2027 Review Control Center | ARDOT</title>
+  <link rel="stylesheet" href="styles.css?v=full-pm-1">
+  <script src="script.js?v=full-pm-1" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img class="brand-logo" src="assets/ardot-logo.svg" alt="Arkansas Department of Transportation (ARDOT)">
+      </div>
+      <div class="header-center">
+        <span>2027 Pavement Preservation Program</span>
+        <strong>Review Control Center</strong>
+      </div>
+      <div class="data-status" id="dataStatus" title="Dashboard data connection status">
+        <span class="status-dot"></span>
+        <div>
+          <strong id="dataMode">Loading data…</strong>
+          <span id="dataTimestamp">Checking workbook connection</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="summary-grid" id="summaryGrid" aria-label="PPP project summary"></section>
+
+    <section class="controls-panel" aria-label="Search and filters">
+      <div class="search-control">
+        <label for="projectSearch">Search project</label>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="projectSearch" type="search" autocomplete="off" placeholder="Job number, description, county…">
+        </div>
+      </div>
+      <div class="filter-control">
+        <label for="lettingFilter">Letting date</label>
+        <select id="lettingFilter"></select>
+      </div>
+      <div class="filter-control">
+        <label for="phaseFilter">Review phase</label>
+        <select id="phaseFilter"></select>
+      </div>
+      <div class="filter-control">
+        <label for="stageFilter">Current stage</label>
+        <select id="stageFilter"></select>
+      </div>
+      <button id="clearFilters" class="clear-button" type="button">Clear</button>
+    </section>
+
+    <section class="attention-strip" id="attentionStrip" aria-label="Projects needing attention"></section>
+
+    <section class="overview-section" aria-labelledby="overviewTitle">
+      <div class="section-bar">
+        <div>
+          <span class="eyebrow">Review distribution</span>
+          <h1 id="overviewTitle">Program Overview</h1>
+        </div>
+        <div class="result-copy" id="resultCount">Showing all projects</div>
+      </div>
+      <div class="phase-overview" id="phaseOverview"></div>
+    </section>
+
+    <section class="workspace-section" aria-labelledby="workspaceTitle">
+      <div class="phase-tabs" id="phaseTabs" role="tablist" aria-label="Review phase detail"></div>
+      <div class="workspace-heading">
+        <div>
+          <span class="eyebrow">Selected phase</span>
+          <h2 id="workspaceTitle">1st Review</h2>
+        </div>
+        <span class="workspace-note" id="workspaceNote"></span>
+      </div>
+      <div class="detail-board" id="detailBoard"></div>
+    </section>
+
+    <section class="upcoming-strip" id="upcomingStrip" aria-label="Upcoming submissions"></section>
+
+    <footer class="page-footer">
+      <span id="validationSummary">Validating workbook milestones…</span>
+      <span>Attention = 7+ calendar days at the current stage</span>
+    </footer>
+  </main>
+
+  <aside class="detail-drawer" id="detailDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <button id="drawerClose" class="drawer-close" type="button" aria-label="Close details">×</button>
+      <div id="drawerContent"></div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Dashboard refreshed from Excel.</div>
+
+  <noscript>
+    <div class="noscript-message">JavaScript must be enabled to view the PPP review dashboard.</div>
+  </noscript>
+</body>
+</html>
