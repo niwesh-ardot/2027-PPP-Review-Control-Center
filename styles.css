@@ -1114,3 +1114,18 @@ h2 { font-size: 21px; }
     min-width: 0;
   }
 }
+
+/* Workflow columns track the reduced Excel schema. */
+.stage-columns { grid-template-columns: repeat(var(--stage-count, 4), minmax(0, 1fr)); }
+.card-notes { margin-top: 9px; padding: 8px; border-left: 3px solid #b98936; background: #fff8eb; color: #51452f; font-size: 12px; line-height: 1.45; overflow-wrap: anywhere; }
+.final-stage-selector { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+@media (max-width: 1000px) { .stage-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .stage-columns { grid-template-columns: 1fr; } }
+
+/* Sent to CCD ends follow-up. */
+.summary-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.project-card.completed { border-color: #9bc6ad; border-left-color: #28794d; background: #f3faf5; }
+.project-card.completed .wait-pill { background: #dcefe2; color: #1c643d; }
+.summary-card.completed .summary-value { color: #28794d; }
+@media (max-width: 1000px) { .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .summary-grid { grid-template-columns: 1fr; } }

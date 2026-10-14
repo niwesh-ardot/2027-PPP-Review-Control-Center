@@ -1,7 +1,8 @@
 
 const FALLBACK_DATA = {
-  "sourceWorkbook": "PPP-2027-Review-Tracking(2).xlsx",
-  "generatedFromWorkbookDate": "2026-08-31",
+  "sourceWorkbook": "PPP-2027-Review-Tracking.xlsx",
+  "generatedFromWorkbookDate": "2026-10-13",
+  "generatedAt": "2026-10-14T01:52:17.488Z",
   "attentionThresholdDays": 7,
   "phases": [
     {
@@ -46,14 +47,7 @@ const FALLBACK_DATA = {
         "Submittal to SB for CCD",
         "Requested Title Sheet",
         "Received Signed Plans",
-        "Sent to CCD",
-        "CCD Corrections",
-        "Returned to SB",
-        "Returned to CCD",
-        "Addendum 1 Sent to Dist",
-        "Addendum 1 to SB",
-        "Additional comments to District",
-        "Sent to SB"
+        "Sent to CCD"
       ]
     }
   ],
@@ -70,9 +64,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "2nd Review Sent to District",
-      "currentPhase": "2nd Review",
-      "stageEnteredDate": "2026-08-28",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-23",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -108,17 +102,79 @@ const FALLBACK_DATA = {
           "stage": "2nd Review Sent to District",
           "date": "2026-08-28",
           "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-01",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-01",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-01",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-01",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-03",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-08",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-09",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-11",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-11",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-11",
+          "sequence": 17
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-23",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-23",
+          "sequence": 20
         }
       ],
       "validation": [
         {
+          "type": "invalid-date",
+          "message": "Invalid date in 'Requested Title Sheet': '9/112026'. Correct the Excel cell; this entry is excluded from current-stage calculations."
+        },
+        {
           "type": "same-day-progression",
-          "message": "4 milestones were recorded on 2026-08-28; the furthest workflow stage on that date is used as current.",
+          "message": "2 milestones were recorded on 2026-09-23; the furthest workflow stage on that date is used as current.",
           "stages": [
-            "1st Review Returned from District",
-            "2nd Review Sent to SB",
-            "2nd Review Returned from SB",
-            "2nd Review Sent to District"
+            "Received Signed Plans",
+            "Sent to CCD"
           ]
         }
       ]
@@ -134,10 +190,10 @@ const FALLBACK_DATA = {
       "scope": "Level Up & 2\" Overlay",
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
-      "notes": "",
-      "currentStage": "2nd Review Sent to District",
-      "currentPhase": "2nd Review",
-      "stageEnteredDate": "2026-08-31",
+      "notes": "Waiting on Signature from District Engineer @10/13/2026",
+      "currentStage": "Received Signed Plans",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-21",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -173,6 +229,66 @@ const FALLBACK_DATA = {
           "stage": "2nd Review Sent to District",
           "date": "2026-08-31",
           "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-08-31",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-08-31",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-01",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-02",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-02",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-02",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-02",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-02",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-03",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-11",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-11",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-21",
+          "sequence": 19
         }
       ],
       "validation": []
@@ -189,9 +305,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "3rd Review Sent to District",
-      "currentPhase": "3rd Review",
-      "stageEnteredDate": "2026-08-27",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-10",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -247,18 +363,54 @@ const FALLBACK_DATA = {
           "stage": "3rd Review Sent to District",
           "date": "2026-08-27",
           "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-01",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-01",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-02",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-02",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-03",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-08",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-08",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-09",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-10",
+          "sequence": 20
         }
       ],
-      "validation": [
-        {
-          "type": "same-day-progression",
-          "message": "2 milestones were recorded on 2026-08-27; the furthest workflow stage on that date is used as current.",
-          "stages": [
-            "3rd Review Returned from SB",
-            "3rd Review Sent to District"
-          ]
-        }
-      ]
+      "validation": []
     },
     {
       "sequence": 4,
@@ -272,9 +424,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "1st Review Sent to District",
-      "currentPhase": "1st Review",
-      "stageEnteredDate": "2026-08-24",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-17",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -290,16 +442,97 @@ const FALLBACK_DATA = {
           "stage": "1st Review Sent to District",
           "date": "2026-08-24",
           "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-02",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-03",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-09-04",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-09-04",
+          "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-10",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-10",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-10",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-11",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-16",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-16",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-16",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-16",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-16",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-16",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-16",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-22",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-17",
+          "sequence": 20
         }
       ],
       "validation": [
         {
-          "type": "same-day-progression",
-          "message": "2 milestones were recorded on 2026-08-24; the furthest workflow stage on that date is used as current.",
-          "stages": [
-            "1st Review Returned from SB",
-            "1st Review Sent to District"
-          ]
+          "type": "date-conflict",
+          "message": "Date sequence conflict: 'Sent to CCD' is dated 2026-09-17, earlier than prior milestone 'Received Signed Plans' dated 2026-09-22. Current stage is determined from the latest applicable date."
         }
       ]
     },
@@ -315,9 +548,137 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "2nd Review Sent to District",
-      "currentPhase": "2nd Review",
-      "stageEnteredDate": "2026-08-31",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-22",
+      "milestones": [
+        {
+          "stage": "1st Review Sent to SB",
+          "date": "2026-08-26",
+          "sequence": 1
+        },
+        {
+          "stage": "1st Review Returned from SB",
+          "date": "2026-08-27",
+          "sequence": 2
+        },
+        {
+          "stage": "1st Review Sent to District",
+          "date": "2026-08-28",
+          "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-08",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-08",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-09-09",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-09-09",
+          "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-09",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-09",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-09",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-09",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-16",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-16",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-16",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-16",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-21",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-16",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-16",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-21",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-22",
+          "sequence": 20
+        }
+      ],
+      "validation": [
+        {
+          "type": "date-conflict",
+          "message": "Date sequence conflict: 'Submittal to SB for CCD' is dated 2026-09-16, earlier than prior milestone '4th Review Returned from District' dated 2026-09-21. Current stage is determined from the latest applicable date."
+        },
+        {
+          "type": "date-conflict",
+          "message": "Date sequence conflict: 'Requested Title Sheet' is dated 2026-09-16, earlier than prior milestone '4th Review Returned from District' dated 2026-09-21. Current stage is determined from the latest applicable date."
+        }
+      ]
+    },
+    {
+      "sequence": 6,
+      "jobNumber": "A50052",
+      "description": "Stone Co. Line - Hwy.25 (S)",
+      "district": "5",
+      "route": "14",
+      "section": "8",
+      "county": "Independence",
+      "scope": "2\" Overlay; Spot Leveling",
+      "lettingDate": "2026-11-04",
+      "dueToPm": "2026-08-17",
+      "notes": "",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-22",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -353,52 +714,83 @@ const FALLBACK_DATA = {
           "stage": "2nd Review Sent to District",
           "date": "2026-08-31",
           "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-08",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-08",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-09",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-09",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-14",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-14",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-16",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-16",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-21",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-16",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-16",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-21",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-22",
+          "sequence": 20
         }
       ],
       "validation": [
         {
-          "type": "same-day-progression",
-          "message": "2 milestones were recorded on 2026-08-31; the furthest workflow stage on that date is used as current.",
-          "stages": [
-            "2nd Review Returned from SB",
-            "2nd Review Sent to District"
-          ]
+          "type": "date-conflict",
+          "message": "Date sequence conflict: 'Submittal to SB for CCD' is dated 2026-09-16, earlier than prior milestone '4th Review Returned from District' dated 2026-09-21. Current stage is determined from the latest applicable date."
+        },
+        {
+          "type": "date-conflict",
+          "message": "Date sequence conflict: 'Requested Title Sheet' is dated 2026-09-16, earlier than prior milestone '4th Review Returned from District' dated 2026-09-21. Current stage is determined from the latest applicable date."
         }
       ]
-    },
-    {
-      "sequence": 6,
-      "jobNumber": "A50052",
-      "description": "Stone Co. Line - Hwy.25 (S)",
-      "district": "5",
-      "route": "14",
-      "section": "8",
-      "county": "Independence",
-      "scope": "2\" Overlay; Spot Leveling",
-      "lettingDate": "2026-11-04",
-      "dueToPm": "2026-08-17",
-      "notes": "",
-      "currentStage": "1st Review Sent to District",
-      "currentPhase": "1st Review",
-      "stageEnteredDate": "2026-08-28",
-      "milestones": [
-        {
-          "stage": "1st Review Sent to SB",
-          "date": "2026-08-26",
-          "sequence": 1
-        },
-        {
-          "stage": "1st Review Returned from SB",
-          "date": "2026-08-27",
-          "sequence": 2
-        },
-        {
-          "stage": "1st Review Sent to District",
-          "date": "2026-08-28",
-          "sequence": 3
-        }
-      ],
-      "validation": []
     },
     {
       "sequence": 7,
@@ -412,9 +804,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "1st Review Sent to District",
-      "currentPhase": "1st Review",
-      "stageEnteredDate": "2026-08-20",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-17",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -430,6 +822,91 @@ const FALLBACK_DATA = {
           "stage": "1st Review Sent to District",
           "date": "2026-08-20",
           "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-08-31",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-08-31",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-09-01",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-09-01",
+          "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-03",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-03",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-04",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-04",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-08",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-14",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-15",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-15",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-15",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-15",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-15",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-15",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-17",
+          "sequence": 20
         }
       ],
       "validation": []
@@ -446,17 +923,131 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "1st Review Sent to SB",
-      "currentPhase": "1st Review",
-      "stageEnteredDate": "2026-08-31",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-14",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
           "date": "2026-08-31",
           "sequence": 1
+        },
+        {
+          "stage": "1st Review Returned from SB",
+          "date": "2026-08-31",
+          "sequence": 2
+        },
+        {
+          "stage": "1st Review Sent to District",
+          "date": "2026-08-31",
+          "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-01",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-01",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-09-02",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-09-03",
+          "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-11",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-11",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-11",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-11",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-14",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-14",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-14",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-14",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-14",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-14",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-14",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-21",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-14",
+          "sequence": 20
         }
       ],
-      "validation": []
+      "validation": [
+        {
+          "type": "date-conflict",
+          "message": "Date sequence conflict: 'Sent to CCD' is dated 2026-09-14, earlier than prior milestone 'Received Signed Plans' dated 2026-09-21. Current stage is determined from the latest applicable date."
+        },
+        {
+          "type": "same-day-progression",
+          "message": "8 milestones were recorded on 2026-09-14; the furthest workflow stage on that date is used as current.",
+          "stages": [
+            "3rd Review Returned from District",
+            "4th Review Sent to SB",
+            "4th Review Returned from SB",
+            "4th Review Sent to District",
+            "4th Review Returned from District",
+            "Submittal to SB for CCD",
+            "Requested Title Sheet",
+            "Sent to CCD"
+          ]
+        }
+      ]
     },
     {
       "sequence": 9,
@@ -470,9 +1061,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "2nd Review Sent to District",
-      "currentPhase": "2nd Review",
-      "stageEnteredDate": "2026-08-31",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-23",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -508,15 +1099,80 @@ const FALLBACK_DATA = {
           "stage": "2nd Review Sent to District",
           "date": "2026-08-31",
           "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-02",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-02",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-03",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-03",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-03",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-03",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-04",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-04",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-09",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-11",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-14",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-23",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-23",
+          "sequence": 20
         }
       ],
       "validation": [
         {
           "type": "same-day-progression",
-          "message": "2 milestones were recorded on 2026-08-31; the furthest workflow stage on that date is used as current.",
+          "message": "2 milestones were recorded on 2026-09-23; the furthest workflow stage on that date is used as current.",
           "stages": [
-            "2nd Review Returned from SB",
-            "2nd Review Sent to District"
+            "Received Signed Plans",
+            "Sent to CCD"
           ]
         }
       ]
@@ -533,9 +1189,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "2nd Review Sent to District",
-      "currentPhase": "2nd Review",
-      "stageEnteredDate": "2026-08-31",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-29",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -571,9 +1227,78 @@ const FALLBACK_DATA = {
           "stage": "2nd Review Sent to District",
           "date": "2026-08-31",
           "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-08",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-08",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-09",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-11",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-16",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-16",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-17",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-21",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-21",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-28",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-21",
+          "sequence": 18
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-29",
+          "sequence": 20
         }
       ],
-      "validation": []
+      "validation": [
+        {
+          "type": "invalid-date",
+          "message": "Invalid date in 'Received Signed Plans': '9/258/2026'. Correct the Excel cell; this entry is excluded from current-stage calculations."
+        },
+        {
+          "type": "date-conflict",
+          "message": "Date sequence conflict: 'Requested Title Sheet' is dated 2026-09-21, earlier than prior milestone 'Submittal to SB for CCD' dated 2026-09-28. Current stage is determined from the latest applicable date."
+        }
+      ]
     },
     {
       "sequence": 11,
@@ -587,9 +1312,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "3rd Review Sent to District",
-      "currentPhase": "3rd Review",
-      "stageEnteredDate": "2026-08-14",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-29",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -645,18 +1370,54 @@ const FALLBACK_DATA = {
           "stage": "3rd Review Sent to District",
           "date": "2026-08-14",
           "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-01",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-01",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-02",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-02",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-03",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-14",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-14",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-28",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-29",
+          "sequence": 20
         }
       ],
-      "validation": [
-        {
-          "type": "same-day-progression",
-          "message": "2 milestones were recorded on 2026-08-14; the furthest workflow stage on that date is used as current.",
-          "stages": [
-            "3rd Review Returned from SB",
-            "3rd Review Sent to District"
-          ]
-        }
-      ]
+      "validation": []
     },
     {
       "sequence": 12,
@@ -670,9 +1431,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "4th Review Sent to District",
-      "currentPhase": "4th Review",
-      "stageEnteredDate": "2026-08-31",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-22",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -748,6 +1509,31 @@ const FALLBACK_DATA = {
           "stage": "4th Review Sent to District",
           "date": "2026-08-31",
           "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-01",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-21",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-21",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-21",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-22",
+          "sequence": 20
         }
       ],
       "validation": []
@@ -764,9 +1550,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2026-11-04",
       "dueToPm": "2026-08-17",
       "notes": "",
-      "currentStage": "1st Review Sent to District",
-      "currentPhase": "1st Review",
-      "stageEnteredDate": "2026-08-14",
+      "currentStage": "Sent to CCD",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-09-14",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -782,16 +1568,107 @@ const FALLBACK_DATA = {
           "stage": "1st Review Sent to District",
           "date": "2026-08-14",
           "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-08-31",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-08-31",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-08-31",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-08-31",
+          "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-09",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-09",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-09",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-09",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-09-14",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-09-14",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-09-14",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-09-14",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-09-14",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-09-14",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-09-14",
+          "sequence": 18
+        },
+        {
+          "stage": "Received Signed Plans",
+          "date": "2026-09-14",
+          "sequence": 19
+        },
+        {
+          "stage": "Sent to CCD",
+          "date": "2026-09-14",
+          "sequence": 20
         }
       ],
       "validation": [
         {
           "type": "same-day-progression",
-          "message": "3 milestones were recorded on 2026-08-14; the furthest workflow stage on that date is used as current.",
+          "message": "9 milestones were recorded on 2026-09-14; the furthest workflow stage on that date is used as current.",
           "stages": [
-            "1st Review Sent to SB",
-            "1st Review Returned from SB",
-            "1st Review Sent to District"
+            "3rd Review Returned from District",
+            "4th Review Sent to SB",
+            "4th Review Returned from SB",
+            "4th Review Sent to District",
+            "4th Review Returned from District",
+            "Submittal to SB for CCD",
+            "Requested Title Sheet",
+            "Received Signed Plans",
+            "Sent to CCD"
           ]
         }
       ]
@@ -808,9 +1685,9 @@ const FALLBACK_DATA = {
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
       "notes": "",
-      "currentStage": "1st Review Sent to District",
-      "currentPhase": "1st Review",
-      "stageEnteredDate": "2026-08-25",
+      "currentStage": "Requested Title Sheet",
+      "currentPhase": "Final Reviews",
+      "stageEnteredDate": "2026-10-13",
       "milestones": [
         {
           "stage": "1st Review Sent to SB",
@@ -826,15 +1703,90 @@ const FALLBACK_DATA = {
           "stage": "1st Review Sent to District",
           "date": "2026-08-25",
           "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-01",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-02",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-09-06",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-09-09",
+          "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-09-10",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-09-10",
+          "sequence": 9
+        },
+        {
+          "stage": "3rd Review Returned from SB",
+          "date": "2026-09-10",
+          "sequence": 10
+        },
+        {
+          "stage": "3rd Review Sent to District",
+          "date": "2026-09-24",
+          "sequence": 11
+        },
+        {
+          "stage": "3rd Review Returned from District",
+          "date": "2026-10-05",
+          "sequence": 12
+        },
+        {
+          "stage": "4th Review Sent to SB",
+          "date": "2026-10-05",
+          "sequence": 13
+        },
+        {
+          "stage": "4th Review Returned from SB",
+          "date": "2026-10-06",
+          "sequence": 14
+        },
+        {
+          "stage": "4th Review Sent to District",
+          "date": "2026-10-06",
+          "sequence": 15
+        },
+        {
+          "stage": "4th Review Returned from District",
+          "date": "2026-10-08",
+          "sequence": 16
+        },
+        {
+          "stage": "Submittal to SB for CCD",
+          "date": "2026-10-13",
+          "sequence": 17
+        },
+        {
+          "stage": "Requested Title Sheet",
+          "date": "2026-10-13",
+          "sequence": 18
         }
       ],
       "validation": [
         {
           "type": "same-day-progression",
-          "message": "2 milestones were recorded on 2026-08-25; the furthest workflow stage on that date is used as current.",
+          "message": "2 milestones were recorded on 2026-10-13; the furthest workflow stage on that date is used as current.",
           "stages": [
-            "1st Review Returned from SB",
-            "1st Review Sent to District"
+            "Submittal to SB for CCD",
+            "Requested Title Sheet"
           ]
         }
       ]
@@ -850,7 +1802,7 @@ const FALLBACK_DATA = {
       "scope": "Mill & Overlay",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "District is waiting on Mix Design from Materials",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -868,7 +1820,7 @@ const FALLBACK_DATA = {
       "scope": "Level Up & 2\" Overlay",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -886,7 +1838,7 @@ const FALLBACK_DATA = {
       "scope": "2\" Overlay; Add 2' Shoulders ",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -904,7 +1856,7 @@ const FALLBACK_DATA = {
       "scope": "2\" Mill & 1.5\" Overlay",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -922,7 +1874,7 @@ const FALLBACK_DATA = {
       "scope": "2\" Overlay; 2' Shoulders",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -940,7 +1892,7 @@ const FALLBACK_DATA = {
       "scope": "Level Up & UTBWC (LM 0.0-15.86); 2\" Mill & 2\" Overlay (LM 15.86-20.448)",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -958,11 +1910,27 @@ const FALLBACK_DATA = {
       "scope": "2\" Mill & 1.5\" Overlay; 2' Shoulders",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
-      "currentStage": null,
-      "currentPhase": null,
-      "stageEnteredDate": null,
-      "milestones": [],
+      "notes": "Emailed Micah asking if it is ready for 2nd review @10.13.26",
+      "currentStage": "1st Review Sent to District",
+      "currentPhase": "1st Review",
+      "stageEnteredDate": "2026-09-24",
+      "milestones": [
+        {
+          "stage": "1st Review Sent to SB",
+          "date": "2026-09-18",
+          "sequence": 1
+        },
+        {
+          "stage": "1st Review Returned from SB",
+          "date": "2026-09-22",
+          "sequence": 2
+        },
+        {
+          "stage": "1st Review Sent to District",
+          "date": "2026-09-24",
+          "sequence": 3
+        }
+      ],
       "validation": []
     },
     {
@@ -976,7 +1944,7 @@ const FALLBACK_DATA = {
       "scope": "Level Up & UTBWC; 2' Shoulders",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -994,7 +1962,7 @@ const FALLBACK_DATA = {
       "scope": "Level Up & Chip Seal; Spot patching; 2' Shoulders",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -1012,7 +1980,7 @@ const FALLBACK_DATA = {
       "scope": "Rut Mill & 1.5\" Overlay",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -1030,12 +1998,68 @@ const FALLBACK_DATA = {
       "scope": "2\" Mill & 1.5\" Overlay",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
-      "currentStage": null,
-      "currentPhase": null,
-      "stageEnteredDate": null,
-      "milestones": [],
-      "validation": []
+      "notes": "Emailed to Sharon for 3rd Review",
+      "currentStage": "3rd Review Sent to SB",
+      "currentPhase": "3rd Review",
+      "stageEnteredDate": "2026-10-13",
+      "milestones": [
+        {
+          "stage": "1st Review Sent to SB",
+          "date": "2026-08-31",
+          "sequence": 1
+        },
+        {
+          "stage": "1st Review Returned from SB",
+          "date": "2026-09-05",
+          "sequence": 2
+        },
+        {
+          "stage": "1st Review Sent to District",
+          "date": "2026-09-09",
+          "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-10",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-10",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-09-10",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-10-13",
+          "sequence": 7
+        },
+        {
+          "stage": "2nd Review Returned from District",
+          "date": "2026-10-13",
+          "sequence": 8
+        },
+        {
+          "stage": "3rd Review Sent to SB",
+          "date": "2026-10-13",
+          "sequence": 9
+        }
+      ],
+      "validation": [
+        {
+          "type": "same-day-progression",
+          "message": "3 milestones were recorded on 2026-10-13; the furthest workflow stage on that date is used as current.",
+          "stages": [
+            "2nd Review Sent to District",
+            "2nd Review Returned from District",
+            "3rd Review Sent to SB"
+          ]
+        }
+      ]
     },
     {
       "sequence": 26,
@@ -1048,12 +2072,58 @@ const FALLBACK_DATA = {
       "scope": "2\" Mill & 2\" Overlay",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
-      "currentStage": null,
-      "currentPhase": null,
-      "stageEnteredDate": null,
-      "milestones": [],
-      "validation": []
+      "notes": "Emailed Bryce asking if it is ready for 3rd review @10.13.26",
+      "currentStage": "2nd Review Sent to District",
+      "currentPhase": "2nd Review",
+      "stageEnteredDate": "2026-09-30",
+      "milestones": [
+        {
+          "stage": "1st Review Sent to SB",
+          "date": "2026-09-16",
+          "sequence": 1
+        },
+        {
+          "stage": "1st Review Returned from SB",
+          "date": "2026-09-22",
+          "sequence": 2
+        },
+        {
+          "stage": "1st Review Sent to District",
+          "date": "2026-09-24",
+          "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-25",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-30",
+          "sequence": 5
+        },
+        {
+          "stage": "2nd Review Returned from SB",
+          "date": "2026-09-30",
+          "sequence": 6
+        },
+        {
+          "stage": "2nd Review Sent to District",
+          "date": "2026-09-30",
+          "sequence": 7
+        }
+      ],
+      "validation": [
+        {
+          "type": "same-day-progression",
+          "message": "3 milestones were recorded on 2026-09-30; the furthest workflow stage on that date is used as current.",
+          "stages": [
+            "2nd Review Sent to SB",
+            "2nd Review Returned from SB",
+            "2nd Review Sent to District"
+          ]
+        }
+      ]
     },
     {
       "sequence": 27,
@@ -1066,7 +2136,7 @@ const FALLBACK_DATA = {
       "scope": "2\" Mill & 2\" Overlay (Sec. 2); Level Up & Thin Overlay (Sec. 3)",
       "lettingDate": "2027-01-20",
       "dueToPm": "2026-10-26",
-      "notes": "",
+      "notes": "Emailed district with the Reminder for October 26 Submission",
       "currentStage": null,
       "currentPhase": null,
       "stageEnteredDate": null,
@@ -1157,10 +2227,36 @@ const FALLBACK_DATA = {
       "lettingDate": "2027-03-03",
       "dueToPm": "2026-12-07",
       "notes": "",
-      "currentStage": null,
-      "currentPhase": null,
-      "stageEnteredDate": null,
-      "milestones": [],
+      "currentStage": "2nd Review Sent to SB",
+      "currentPhase": "2nd Review",
+      "stageEnteredDate": "2026-09-30",
+      "milestones": [
+        {
+          "stage": "1st Review Sent to SB",
+          "date": "2026-09-02",
+          "sequence": 1
+        },
+        {
+          "stage": "1st Review Returned from SB",
+          "date": "2026-09-08",
+          "sequence": 2
+        },
+        {
+          "stage": "1st Review Sent to District",
+          "date": "2026-09-09",
+          "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-28",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-30",
+          "sequence": 5
+        }
+      ],
       "validation": []
     },
     {
@@ -1247,10 +2343,36 @@ const FALLBACK_DATA = {
       "lettingDate": "2027-03-03",
       "dueToPm": "2026-12-07",
       "notes": "",
-      "currentStage": null,
-      "currentPhase": null,
-      "stageEnteredDate": null,
-      "milestones": [],
+      "currentStage": "2nd Review Sent to SB",
+      "currentPhase": "2nd Review",
+      "stageEnteredDate": "2026-09-28",
+      "milestones": [
+        {
+          "stage": "1st Review Sent to SB",
+          "date": "2026-09-16",
+          "sequence": 1
+        },
+        {
+          "stage": "1st Review Returned from SB",
+          "date": "2026-09-22",
+          "sequence": 2
+        },
+        {
+          "stage": "1st Review Sent to District",
+          "date": "2026-09-24",
+          "sequence": 3
+        },
+        {
+          "stage": "1st Review Returned from District",
+          "date": "2026-09-25",
+          "sequence": 4
+        },
+        {
+          "stage": "2nd Review Sent to SB",
+          "date": "2026-09-28",
+          "sequence": 5
+        }
+      ],
       "validation": []
     },
     {
@@ -1261,7 +2383,7 @@ const FALLBACK_DATA = {
       "route": "14",
       "section": "15 & 16",
       "county": "Mississippi & Poinsett",
-      "scope": "Level Up & 2\" Overlay w/ Patching; 2' Shoulders",
+      "scope": "2\u201d Overlay (Sec. 15 LM 0.00-1.796); FDR (Sec. 21 LM 1.796-2.253 & Sec. 16 LM 0.00-9.650)",
       "lettingDate": "2027-03-03",
       "dueToPm": "2026-12-07",
       "notes": "",
@@ -1327,6 +2449,24 @@ const FALLBACK_DATA = {
     },
     {
       "sequence": 42,
+      "jobNumber": "A20046",
+      "description": "Dallas Co. Line - Hwy. 167 (S)",
+      "district": "2",
+      "route": "167",
+      "section": "10, 10B &11B",
+      "county": "Grant",
+      "scope": "Level up & UTBWC (Hwy. 167), UTBWC (Hwy. 167B)",
+      "lettingDate": "2027-04-14",
+      "dueToPm": "2027-01-11",
+      "notes": "",
+      "currentStage": null,
+      "currentPhase": null,
+      "stageEnteredDate": null,
+      "milestones": [],
+      "validation": []
+    },
+    {
+      "sequence": 43,
       "jobNumber": "A40060",
       "description": "Hwy. 71 \u2013 Montgomery Co. Line (S)",
       "district": "4",
@@ -1344,7 +2484,7 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 43,
+      "sequence": 44,
       "jobNumber": "A50050",
       "description": "Stone Co. Line \u2013 Brandenburg (S)",
       "district": "5",
@@ -1362,7 +2502,7 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 44,
+      "sequence": 45,
       "jobNumber": "A60067",
       "description": "Little Rock \u2013 Jefferson Co. Line (S)",
       "district": "6",
@@ -1380,7 +2520,7 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 45,
+      "sequence": 46,
       "jobNumber": "A70048",
       "description": "Hwy. 7B \u2013 South (S)",
       "district": "7",
@@ -1398,7 +2538,7 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 46,
+      "sequence": 47,
       "jobNumber": "A90049",
       "description": "South Mountain Rd. \u2013 North (S)",
       "district": "9",
@@ -1416,7 +2556,7 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 47,
+      "sequence": 48,
       "jobNumber": "A00102",
       "description": "Hwy. 93 \u2013 East (S)",
       "district": "10",
@@ -1434,7 +2574,43 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 48,
+      "sequence": 49,
+      "jobNumber": "A20045",
+      "description": "Hwy. 133 \u2013 Hwy. 82 (S)",
+      "district": "2",
+      "route": "52",
+      "section": "0",
+      "county": "Ashley",
+      "scope": "Mill & Overlay",
+      "lettingDate": "2027-05-19",
+      "dueToPm": "2027-02-22",
+      "notes": "",
+      "currentStage": null,
+      "currentPhase": null,
+      "stageEnteredDate": null,
+      "milestones": [],
+      "validation": []
+    },
+    {
+      "sequence": 50,
+      "jobNumber": "A30053",
+      "description": "S. of Ogden - S. of Ashdown (S)",
+      "district": "3",
+      "route": "71",
+      "section": "4",
+      "county": "Little River",
+      "scope": "UTBWC",
+      "lettingDate": "2027-05-19",
+      "dueToPm": "2027-02-22",
+      "notes": "",
+      "currentStage": null,
+      "currentPhase": null,
+      "stageEnteredDate": null,
+      "milestones": [],
+      "validation": []
+    },
+    {
+      "sequence": 51,
       "jobNumber": "A50055",
       "description": "Hwy. 11 \u2013 Kensett (S)",
       "district": "5",
@@ -1452,7 +2628,61 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 49,
+      "sequence": 52,
+      "jobNumber": "A60069",
+      "description": "Shady Grove Rd. \u2013 Hwy. 270B",
+      "district": "6",
+      "route": "128",
+      "section": "10",
+      "county": "Garland",
+      "scope": "2\" Mill & 2\" Overlay",
+      "lettingDate": "2027-05-19",
+      "dueToPm": "2027-02-22",
+      "notes": "",
+      "currentStage": null,
+      "currentPhase": null,
+      "stageEnteredDate": null,
+      "milestones": [],
+      "validation": []
+    },
+    {
+      "sequence": 53,
+      "jobNumber": "A70051",
+      "description": "Gurdon - Nevada Co. Line (S)",
+      "district": "7",
+      "route": "53",
+      "section": "1",
+      "county": "Clark",
+      "scope": "UTBWC",
+      "lettingDate": "2027-05-19",
+      "dueToPm": "2027-02-22",
+      "notes": "",
+      "currentStage": null,
+      "currentPhase": null,
+      "stageEnteredDate": null,
+      "milestones": [],
+      "validation": []
+    },
+    {
+      "sequence": 54,
+      "jobNumber": "A90036",
+      "description": "N. of I-49 - Missouri State Line (Bella Vista) (S)",
+      "district": "9",
+      "route": "71",
+      "section": "19",
+      "county": "Benton",
+      "scope": "1\" Level Up & UTBWC",
+      "lettingDate": "2027-05-19",
+      "dueToPm": "2027-02-22",
+      "notes": "",
+      "currentStage": null,
+      "currentPhase": null,
+      "stageEnteredDate": null,
+      "milestones": [],
+      "validation": []
+    },
+    {
+      "sequence": 55,
       "jobNumber": "A90047",
       "description": "S. of Hwy. 206 \u2013 Hwy. 123 (S)",
       "district": "9",
@@ -1470,7 +2700,7 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 50,
+      "sequence": 56,
       "jobNumber": "A00101",
       "description": "Piggott \u2013 Marmaduke (S)",
       "district": "10",
@@ -1488,7 +2718,7 @@ const FALLBACK_DATA = {
       "validation": []
     },
     {
-      "sequence": 51,
+      "sequence": 57,
       "jobNumber": "090735",
       "description": "Oklahoma State Line \u2013 East (Siloam Springs) (S)",
       "district": "9",
@@ -1505,18 +2735,8 @@ const FALLBACK_DATA = {
       "milestones": [],
       "validation": []
     }
-  ],
-  "validationSummary": {
-    "projects": 51,
-    "projectsWithCurrentStage": 14,
-    "projectsUpcoming": 37,
-    "sameDayProgressionProjects": 8,
-    "dateConflictProjects": 0
-  },
-  "asOfDate": "2026-08-31",
-  "generatedAt": "2026-08-31T12:51:00-05:00"
+  ]
 };
-
 
 const WORKBOOK_URL = "data/PPP-2027-Review-Tracking.xlsx";
 let lastWorkbookHash = null;
@@ -1703,22 +2923,54 @@ function parseWorksheet(xml, sharedStrings) {
 }
 
 function excelDateToIso(raw) {
-  if (raw === null || raw === undefined || raw === "") return null;
+  if (raw === null || raw === undefined || String(raw).trim() === "") return null;
   const text = String(raw).trim();
-  if (!text) return null;
-  if (/^\d{4}-\d{2}-\d{2}$/.test(text)) return text;
-
-  const number = Number(text);
-  if (Number.isFinite(number) && number > 0) {
-    const epoch = Date.UTC(1899, 11, 30);
-    return new Date(epoch + Math.round(number * DAY_MS)).toISOString().slice(0, 10);
+  if (/^\d+(?:\.\d+)?$/.test(text)) {
+    const serial = Number(text);
+    if (serial <= 0 || serial > 2958465) return null;
+    return new Date(Date.UTC(1899, 11, 30) + Math.floor(serial) * DAY_MS).toISOString().slice(0, 10);
   }
+  const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(text);
+  const us = /^(\d{1,2})[\/-](\d{1,2})[\/-](\d{4})$/.exec(text);
+  if (!iso && !us) return null;
+  const year = Number(iso ? iso[1] : us[3]);
+  const month = Number(iso ? iso[2] : us[1]);
+  const day = Number(iso ? iso[3] : us[2]);
+  const date = new Date(Date.UTC(year, month - 1, day));
+  if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return null;
+  return date.toISOString().slice(0, 10);
+}
 
-  const parsed = new Date(text);
-  if (!Number.isNaN(parsed.getTime())) {
-    return new Date(Date.UTC(parsed.getFullYear(), parsed.getMonth(), parsed.getDate())).toISOString().slice(0, 10);
+// The project sheet owns which stages exist. Reference rows only supply grouping/order.
+function workflowPhasesForHeaders(headers, referenceRows) {
+  const definitions = [];
+  if (referenceRows) {
+    const refHeaders = new Map([...referenceRows.get(1) || []].map(([col, name]) => [String(name).trim(), col]));
+    for (const [rowIndex, row] of referenceRows) {
+      if (rowIndex === 1) continue;
+      const stage = String(row.get(refHeaders.get("Milestone Column Header")) || "").trim();
+      const phase = String(row.get(refHeaders.get("Review Phase")) || "").trim();
+      if (stage && phase && headers.has(stage)) definitions.push({stage, phase, sequence: Number(row.get(refHeaders.get("Sequence"))) || rowIndex});
+    }
   }
-  return text;
+  const known = new Set(definitions.map(d => d.stage));
+  let sequence = definitions.reduce((n, d) => Math.max(n, d.sequence), 0);
+  for (const phase of FALLBACK_DATA.phases) {
+    for (const stage of phase.stages) {
+      if (headers.has(stage) && !known.has(stage)) {
+        definitions.push({stage, phase: phase.name, sequence: ++sequence});
+        known.add(stage);
+      }
+    }
+  }
+  const phases = [];
+  for (const item of definitions.sort((a,b) => a.sequence - b.sequence)) {
+    let phase = phases.find(p => p.name === item.phase);
+    if (!phase) { phase = {name: item.phase, stages: []}; phases.push(phase); }
+    if (!phase.stages.includes(item.stage)) phase.stages.push(item.stage);
+  }
+  if (!phases.length) throw new Error("No workflow columns found in PPP Projects.");
+  return phases;
 }
 
 function localIsoDate(date = new Date()) {
@@ -1758,7 +3010,12 @@ async function parseWorkbookArrayBuffer(buffer) {
   }
 
   const required = ["Job Number", "Project Description", "Letting Date", "Due to PM", "Notes"];
-  for (const phase of FALLBACK_DATA.phases) required.push(...phase.stages);
+  let referenceRows = null;
+  if (/<sheet\b[^>]*name="Stage Reference"/.test(workbookXml)) {
+    const referencePath = findWorksheetPath(workbookXml, relsXml, "Stage Reference");
+    referenceRows = parseWorksheet(decoder.decode(await extractZipEntry(bytes, entries, referencePath)), sharedStrings);
+  }
+  const phases = workflowPhasesForHeaders(headers, referenceRows);
   for (const header of required) {
     if (!headers.has(header)) throw new Error(`Required workbook column missing: ${header}`);
   }
@@ -1766,7 +3023,7 @@ async function parseWorkbookArrayBuffer(buffer) {
   const sequenceByStage = new Map();
   const phaseByStage = new Map();
   let stageSequence = 0;
-  FALLBACK_DATA.phases.forEach(phase => {
+  phases.forEach(phase => {
     phase.stages.forEach(stage => {
       stageSequence++;
       sequenceByStage.set(stage, stageSequence);
@@ -1784,14 +3041,16 @@ async function parseWorkbookArrayBuffer(buffer) {
     if (!jobNumber) continue;
 
     const milestones = [];
-    FALLBACK_DATA.phases.forEach(phase => {
+    const validation = [];
+    phases.forEach(phase => {
       phase.stages.forEach(stage => {
-        const date = excelDateToIso(getCell(row, stage));
+        const raw = getCell(row, stage);
+        const date = excelDateToIso(raw);
+        if (raw.trim() && !date) validation.push({type: "invalid-date", message: `Invalid date in '${stage}': '${raw}'. Correct the Excel cell; this entry is excluded from current-stage calculations.`});
         if (date) milestones.push({ stage, date, sequence: sequenceByStage.get(stage) });
       });
     });
 
-    const validation = [];
     let maxPriorDate = null;
     let maxPriorStage = null;
     [...milestones].sort((a, b) => a.sequence - b.sequence).forEach(m => {
@@ -1807,9 +3066,10 @@ async function parseWorkbookArrayBuffer(buffer) {
       }
     });
 
-    const latest = milestones.length
+    const completedMilestone = milestones.find(m => m.stage === "Sent to CCD");
+    const latest = completedMilestone || (milestones.length
       ? [...milestones].sort((a, b) => a.date.localeCompare(b.date) || a.sequence - b.sequence).at(-1)
-      : null;
+      : null);
 
     if (latest) {
       const sameDateMilestones = milestones
@@ -1851,7 +3111,7 @@ async function parseWorkbookArrayBuffer(buffer) {
     generatedAt: now.toISOString(),
     asOfDate: localIsoDate(now),
     attentionThresholdDays: 7,
-    phases: FALLBACK_DATA.phases,
+    phases,
     projects
   };
 }
@@ -1950,7 +3210,8 @@ function waitingDays(project) {
 }
 
 function attentionClass(project) {
-  const hasConflict = (project.validation || []).some(v => v.type === "date-conflict");
+  if (isCompleted(project)) return "completed";
+  const hasConflict = (project.validation || []).some(v => ["date-conflict", "invalid-date"].includes(v.type));
   if (hasConflict) return "conflict";
   const days = waitingDays(project);
   if (days >= 14) return "critical";
@@ -1975,8 +3236,16 @@ function phaseForStage(stage) {
   return null;
 }
 
+function isCompleted(project) {
+  return project.currentStage === "Sent to CCD" || (project.milestones || []).some(m => m.stage === "Sent to CCD" && parseIsoDate(m.date));
+}
+
+function completedProjects() {
+  return APP_DATA.projects.filter(isCompleted);
+}
+
 function activeProjects() {
-  return APP_DATA.projects.filter(p => p.currentStage);
+  return APP_DATA.projects.filter(p => p.currentStage && !isCompleted(p));
 }
 
 function upcomingProjects() {
@@ -2032,26 +3301,32 @@ function renderSummary() {
   const active = activeProjects();
   const upcoming = upcomingProjects();
   const attention = active.filter(p => waitingDays(p) >= (APP_DATA.attentionThresholdDays || 7) ||
-    (p.validation || []).some(v => v.type === "date-conflict"));
+    (p.validation || []).some(v => ["date-conflict", "invalid-date"].includes(v.type)));
   const nextLetting = nextLettingDate(APP_DATA.projects);
-  const conflicts = APP_DATA.projects.filter(p => (p.validation || []).some(v => v.type === "date-conflict")).length;
+  const conflicts = APP_DATA.projects.filter(p => !isCompleted(p) && (p.validation || []).some(v => ["date-conflict", "invalid-date"].includes(v.type))).length;
 
   const cards = [
     {
       label: "Total PPP projects",
       value: APP_DATA.projects.length,
-      note: conflicts ? `${conflicts} project${conflicts === 1 ? "" : "s"} with date conflict` : "Workbook project count verified"
+      note: conflicts ? `${conflicts} project${conflicts === 1 ? "" : "s"} with date issues` : "Workbook project count verified"
     },
     {
       label: "Active reviews",
       value: active.length,
-      note: "Projects with a populated workflow milestone"
+      note: "Reviews still requiring follow-up"
     },
     {
       label: "Need attention",
       value: attention.length,
-      note: `${APP_DATA.attentionThresholdDays || 7}+ days waiting or a date conflict`,
+      note: `${APP_DATA.attentionThresholdDays || 7}+ days waiting or a date issue`,
       className: "attention"
+    },
+    {
+      label: "Completed",
+      value: completedProjects().length,
+      note: "Sent to CCD · no further follow-up",
+      className: "completed"
     },
     {
       label: "Upcoming",
@@ -2075,8 +3350,8 @@ function renderAttention() {
   const filtered = baseFilteredProjects();
   const threshold = APP_DATA.attentionThresholdDays || 7;
   const attention = filtered
-    .filter(p => p.currentStage)
-    .filter(p => waitingDays(p) >= threshold || (p.validation || []).some(v => v.type === "date-conflict"))
+    .filter(p => p.currentStage && !isCompleted(p))
+    .filter(p => waitingDays(p) >= threshold || (p.validation || []).some(v => ["date-conflict", "invalid-date"].includes(v.type)))
     .sort((a, b) => waitingDays(b) - waitingDays(a));
 
   if (!attention.length) {
@@ -2091,9 +3366,9 @@ function renderAttention() {
     <span class="attention-title">Needs attention · ${attention.length}</span>
     <div class="attention-items">
       ${attention.map(p => {
-        const conflict = (p.validation || []).some(v => v.type === "date-conflict");
+        const conflict = (p.validation || []).some(v => ["date-conflict", "invalid-date"].includes(v.type));
         return `<button type="button" class="attention-chip" data-project="${escapeHtml(p.jobNumber)}">
-          ${escapeHtml(p.jobNumber)} · <strong>${conflict ? "date conflict" : `${waitingDays(p)}d`}</strong>
+          ${escapeHtml(p.jobNumber)} · <strong>${conflict ? "date issue" : `${waitingDays(p)}d`}</strong>
         </button>`;
       }).join("")}
     </div>
@@ -2175,9 +3450,9 @@ function renderTabs() {
 function projectCard(project) {
   const days = waitingDays(project);
   const status = attentionClass(project);
-  const conflict = (project.validation || []).some(v => v.type === "date-conflict");
+  const conflict = (project.validation || []).some(v => ["date-conflict", "invalid-date"].includes(v.type));
   const attention = status === "attention" || status === "critical" || status === "conflict";
-  const waitText = project.stageEnteredDate
+  const waitText = isCompleted(project) ? "✓ DONE" : project.stageEnteredDate
     ? `${attention ? "⚠ " : ""}${days} DAY${days === 1 ? "" : "S"}`
     : "—";
   return `
@@ -2191,9 +3466,10 @@ function projectCard(project) {
       <div class="project-description" title="${escapeHtml(project.description)}">${escapeHtml(project.description)}</div>
       <div class="project-meta">
         <span><b>Letting</b> ${formatDate(project.lettingDate, true)}</span>
-        <span><b>Entered</b> ${formatDate(project.stageEnteredDate, true)}</span>
+        <span><b>${isCompleted(project) ? "Completed" : "Entered"}</b> ${formatDate(project.stageEnteredDate, true)}</span>
       </div>
-      ${conflict ? `<div class="card-warning">⚠ Workbook date conflict</div>` : ""}
+      ${project.notes ? `<div class="card-notes">${escapeHtml(project.notes)}</div>` : ""}
+      ${conflict && !isCompleted(project) ? `<div class="card-warning">⚠ Workbook date issue</div>` : ""}
     </article>
   `;
 }
@@ -2233,13 +3509,13 @@ function renderDetailBoard() {
   els.workspaceTitle.textContent = phase.name;
   els.workspaceNote.textContent = `${filtered.length} matching project${filtered.length === 1 ? "" : "s"} currently in this phase`;
 
-  if (phase.name === "Final Reviews") {
+  if (phase.name === "Final Reviews" && phase.stages.length > 4) {
     renderFinalReviews(phase, filtered);
     return;
   }
 
   els.detailBoard.innerHTML = `
-    <div class="stage-columns">
+    <div class="stage-columns" style="--stage-count:${phase.stages.length}">
       ${phase.stages.map(stage => {
         const projects = filtered.filter(p => p.currentStage === stage)
           .sort((a, b) => waitingDays(b) - waitingDays(a));
@@ -2346,8 +3622,10 @@ function openProject(jobNumber) {
     <h2 class="drawer-title" id="drawerTitle">${escapeHtml(project.description)}</h2>
 
     <div class="drawer-stage">
-      <strong>${escapeHtml(project.currentStage || "Not yet in review")}</strong>
-      <span>${project.currentStage
+      <strong>${escapeHtml(isCompleted(project) ? "Completed — Sent to CCD" : project.currentStage || "Not yet in review")}</strong>
+      <span>${isCompleted(project)
+        ? `Completed ${formatDate(project.stageEnteredDate)} · No further follow-up required`
+        : project.currentStage
         ? `Entered ${formatDate(project.stageEnteredDate)} · ${days} calendar day${days === 1 ? "" : "s"} waiting`
         : `Letting ${formatDate(project.lettingDate)}`}</span>
     </div>
@@ -2466,19 +3744,20 @@ function populateStageFilter() {
 function renderResultCount() {
   const filtered = baseFilteredProjects();
   const total = APP_DATA.projects.length;
-  const activeFiltered = filtered.filter(p => p.currentStage).length;
+  const activeFiltered = filtered.filter(p => p.currentStage && !isCompleted(p)).length;
+  const completedFiltered = filtered.filter(isCompleted).length;
   const upcomingFiltered = upcomingFilteredProjects().length;
   const filtersActive = state.search || state.letting !== "all" || state.phase !== "all" || state.stage !== "all";
   els.resultCount.textContent = filtersActive
-    ? `${filtered.length} matching projects · ${activeFiltered} active · ${upcomingFiltered} upcoming`
-    : `${total} total projects · ${activeProjects().length} active`;
+    ? `${filtered.length} matching projects · ${activeFiltered} active · ${completedFiltered} completed · ${upcomingFiltered} upcoming`
+    : `${total} total projects · ${activeProjects().length} active · ${completedProjects().length} completed`;
 }
 
 function renderValidation() {
-  const conflicts = APP_DATA.projects.filter(p => (p.validation || []).some(v => v.type === "date-conflict")).length;
+  const conflicts = APP_DATA.projects.filter(p => !isCompleted(p) && (p.validation || []).some(v => ["date-conflict", "invalid-date"].includes(v.type))).length;
   const sameDay = APP_DATA.projects.filter(p => (p.validation || []).some(v => v.type === "same-day-progression")).length;
   els.validationSummary.textContent = conflicts
-    ? `${conflicts} project${conflicts === 1 ? "" : "s"} contain chronological date conflicts; review the red flags.`
+    ? `${conflicts} project${conflicts === 1 ? "" : "s"} contain date issues; review the red flags.`
     : `Milestone validation: no chronological conflicts${sameDay ? ` · ${sameDay} same-day progression project${sameDay === 1 ? "" : "s"}` : ""}.`;
 }
 
@@ -2540,13 +3819,13 @@ async function loadWorkbookFromDataFolder({ announce = false } = {}) {
       els.dataStatus.classList.remove("live", "snapshot");
       els.dataStatus.classList.add("error");
       els.dataMode.textContent = "Excel refresh pending";
-      els.dataTimestamp.textContent = "Workbook is unavailable or being saved; retrying automatically";
+      els.dataTimestamp.textContent = `Retrying automatically: ${error.message}`;
       return false;
     }
     connectionMode = "snapshot";
     populateFilters();
     renderAll();
-    updateConnectionLabel("Excel data file unavailable; using embedded snapshot");
+    updateConnectionLabel(`Using embedded snapshot: ${error.message}`);
     return false;
   }
 }
